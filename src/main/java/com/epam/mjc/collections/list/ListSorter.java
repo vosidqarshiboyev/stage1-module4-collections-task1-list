@@ -11,5 +11,9 @@ public class ListSorter {
 class ListComparator implements Comparator<String> {
     @Override
     public int compare(String a, String b) {
+        if((Integer.parseInt(a)*Integer.parseInt(a))*5+3>(Integer.parseInt(b)*Integer.parseInt(b))*5+3){
+            return 1;
+        }
+        return -1;
     }
 }
